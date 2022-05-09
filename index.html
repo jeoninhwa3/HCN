@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrap">
@@ -40,9 +41,35 @@
                         <li><a href="">고객지원</a></li>
                     </ul>
                 </nav>
+
+                <ul class="gnb-etc">
+                    <li><a href="">채널안내</a></li>
+                    <li><a href="">간편요금계산기</a></li>
+                    <li class="btn-search"><a href=""><span class="blind">검색 버튼</span></a></li>
+                    <li class="btn-menu"><a href=""><span class="blind">메뉴 버튼</span></a></li>
+                </ul>
             </div>
+            <!-- //gnb-menu -->
         </header>
         <!-- //header -->
+        <main>
+            <div class="main-slide mySwiper">
+                <div class="swiper-wrapper">
+                   <div class="swiper-slide"></div> 
+                   <div class="swiper-slide"></div> 
+                   <div class="swiper-slide"></div> 
+                </div>
+                <div class="btn-wrap">
+                    <div class="btn-next"></div>
+                    <div class="btn-prev"></div>
+                </div>    
+                <div class="slide-pagination"></div>
+            </div>
+            <!-- //main-slide -->
+        </main>
+        <!-- //main -->
     </div>
+    <!-- //wrap -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
