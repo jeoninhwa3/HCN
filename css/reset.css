@@ -30,6 +30,10 @@ body {
 ol, ul {
 	list-style: none;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -41,4 +45,22 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+.inner-wrap {
+	width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+}
+.floatCancel {
+	content: '';
+	display: block;
+	clear: both;
 }

@@ -13,41 +13,45 @@
     <div class="wrap">
         <header>
             <div class="top-menu">
-                <ul class="site">
-                    <li><a href="">개인</a></li>
-                    <li><a href="">기업</a></li>
-                    <li class="select-box"><a href="">지역방송</a></li>
-                </ul>
-                <ul class="utill">
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                    <li><a href="">회사소개</a></li>
-                    <li><a href="">ENGLISH</a></li>
-                </ul>
+                <div class="inner-wrap floatCancel">
+                    <ul class="site floatCancel">
+                        <li class="active"><a href="">개인</a></li>
+                        <li><a href="">기업</a></li>
+                        <li class="select-box"><a href="">지역방송</a></li>
+                    </ul>
+                    <ul class="utill floatCancel">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">ENGLISH</a></li>
+                    </ul>
+                </div>
             </div>
             <!-- //top-menu -->
             <div class="gnb-menu">
-                <h1>
-                    <a href="">
-                        <span class="blind">HCN</span>
-                    </a>
-                </h1>
+                <div class="inner-wrap">
+                    <h1>
+                        <a href="">
+                            <span class="blind">HCN</span>
+                        </a>
+                    </h1>
+        
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="">온라인특가</a></li>
+                            <li><a href="">상품</a></li>
+                            <li><a href="">이벤트/혜택</a></li>
+                            <li><a href="">고객지원</a></li>
+                        </ul>
+                    </nav>
     
-                <nav>
-                    <ul class="gnb">
-                        <li><a href="">온라인특가</a></li>
-                        <li><a href="">상품</a></li>
-                        <li><a href="">이벤트/혜택</a></li>
-                        <li><a href="">고객지원</a></li>
+                    <ul class="gnb-etc">
+                        <li><a href="">채널안내</a></li>
+                        <li><a href="">간편요금계산기</a></li>
+                        <li class="btn-search"><a href=""><span class="blind">검색 버튼</span></a></li>
+                        <li class="btn-menu"><a href=""><span class="blind">메뉴 버튼</span></a></li>
                     </ul>
-                </nav>
-
-                <ul class="gnb-etc">
-                    <li><a href="">채널안내</a></li>
-                    <li><a href="">간편요금계산기</a></li>
-                    <li class="btn-search"><a href=""><span class="blind">검색 버튼</span></a></li>
-                    <li class="btn-menu"><a href=""><span class="blind">메뉴 버튼</span></a></li>
-                </ul>
+                </div>
             </div>
             <!-- //gnb-menu -->
         </header>
@@ -66,8 +70,133 @@
                 <div class="slide-pagination"></div>
             </div>
             <!-- //main-slide -->
+            <div class="best-goods">
+                <h2>BEST 상품</h2>
+                <p>가장 인기있는 상품만 모아서</p>
+                <div class="goods-slide mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div> 
+                        <div class="swiper-slide"></div> 
+                        <div class="swiper-slide"></div>    
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="btn-next"></div>
+                        <div class="btn-prev"></div>
+                    </div>  
+                    <div class="slide-pagination"></div>
+                </div>
+                <div class="best-data">
+                    <div class="best-box">
+                        <dl>
+                            <dt>HD실버</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>8,080</strong>
+                                        원 / 월
+                                    </li>
+                                    <li>3년약정시</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="plus">스카이100M</span></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>13,750</strong>
+                                        원 / 월
+                                    </li>
+                                    <li>3년약정시</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="plus">알뜰폰베이직</span></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>9,900</strong>
+                                        원 / 월
+                                    </li>
+                                    <li>0년약정시</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="plus">제휴카드 할인</span></dt>
+                            <dd>
+                                <button>선택</button>
+                            </dd>
+                        </dl>
+                        <dl class="result">
+                            <dt><span class="sum">합계</span></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>31,730</strong>
+                                        원 / 월
+                                    </li>
+                                    <li>부가세포함</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- //best-box -->
+                    <a href="">가입상담 받기</a>
+                </div>
+            </div>
+            <!-- //best-goods -->
+
+            <div class="banner-wrap">
+                <a href=""><span class="blind">방송/인터넷 초특가 단체 가입안내</span></a>
+            </div>
+            <!-- //banner-wrap -->
+
+            <div class="vod-intro">
+                <h2>신작 VOD 소개</h2>
+                <div class="vod-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div> 
+                        <div class="swiper-slide"></div> 
+                        <div class="swiper-slide"></div>    
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="btn-next"></div>
+                        <div class="btn-prev"></div>
+                    </div>  
+                    <div class="slide-pagination"></div>
+                </div>
+            </div>
+            <!-- //vod-intro -->
+
+            <div class="homeLiving-goods">
+                <p>HCN만의 다양한 상품들을 경험해 보세요!</p>
+                <ul>
+                    <li><a href="">생활가전</a></li>
+                    <li><a href="">영상보안</a></li>
+                </ul>
+            </div>
+            <!-- //homeLiving-goods -->
+
+            <div class="banner-wrap">
+                <a href="">
+                    <img src="images/img-banner02.png" alt="HCN 방송 광고">
+                </a>
+            </div>
+            <!-- //banner-wrap -->
+
+            <div class="board-wrap">
+                <h3>공지사항</h3>
+                <p><a href="">[HCN] 채널명 및 디지털방송 SD→HD화질 변경 안내</a></p>
+                <span>2022-04-22</span>
+                <a href="" class="more">MORE</a>
+            </div>
+            <!-- //board-wrap -->
         </main>
         <!-- //main -->
+
+        <footer></footer>
     </div>
     <!-- //wrap -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
