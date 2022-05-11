@@ -55,11 +55,12 @@ table {
 	clip: rect(0, 0, 0, 0);
 }
 .inner-wrap {
-	width: 1280px;
+	position: relative;
+	max-width: 1280px;
 	height: 100%;
 	margin: 0 auto;
 }
-.floatCancel {
+.floatCancel::after {
 	content: '';
 	display: block;
 	clear: both;
