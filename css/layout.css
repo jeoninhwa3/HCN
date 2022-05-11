@@ -60,6 +60,7 @@ header .top-menu .utill li {
 header .top-menu .utill li a {
     display: block;
     height: 100%;
+    font-size: 14px;
 }
 header .top-menu .utill li:not(:first-child) {
     padding-left: 15px;
@@ -89,9 +90,6 @@ header .gnb-menu::after {
     height: 1px;
     background-color: #e1e1e1;
 }
-header .gnb-menu .inner-wrap {
-    position: relative;
-}
 header .gnb-menu h1 {
     width: 212px;
     height: 100%;
@@ -109,8 +107,6 @@ header .gnb-menu nav {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-}
-header .gnb-menu nav .gnb {
 }
 header .gnb-menu nav .gnb li {
     display: inline-block;
@@ -132,14 +128,74 @@ header .gnb-menu .gnb-etc {
 header .gnb-menu .gnb-etc li {
     display: inline-block;
 }
-/* header .gnb-menu .gnb-etc li:nth-child(1) {
-    padding-left: 30px;
-    margin-left: 30px;
+header .gnb-menu .gnb-etc li:not(:last-child) {
+    margin-right: 30px;
 }
-header .gnb-menu .gnb-etc li:nth-child(2) {
-    padding-left: 30px;
-    margin-left: 30px;
-} */
+header .gnb-menu .gnb-etc li.btn-chanel,
+header .gnb-menu .gnb-etc li.btn-fee {
+    display: inline-block;
+    line-height: 18px;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+header .gnb-menu .gnb-etc li.btn-chanel {
+    background-image: url('/images/icon_btn-chanel.png');
+}
+header .gnb-menu .gnb-etc li.btn-fee {
+    background-image: url('/images/icon_btn-fee.png');
+}
 header .gnb-menu .gnb-etc li a {
     font-size: 13px;
+    vertical-align: top;
+}
+header .gnb-menu .gnb-etc li.btn-search,
+header .gnb-menu .gnb-etc li.btn-menu {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+}
+header .gnb-menu .gnb-etc li.btn-search {
+    background-image: url('/images/icon_btn-search.png');
+    vertical-align: top;
+}
+header .gnb-menu .gnb-etc li.btn-menu {
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+}
+header .gnb-menu .gnb-etc li.btn-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+header .gnb-menu .gnb-etc li.btn-menu span::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 21px;
+    height: 1px;
+    background-color: #000;
+}
+header .gnb-menu .gnb-etc li.btn-menu span {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 21px;
+    height: 1px;
+    background-color: #000;
+}
+header .gnb-menu .gnb-etc li.btn-menu span::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 21px;
+    height: 1px;
+    background-color: #000;
 }
