@@ -47,3 +47,21 @@ var swiper = new Swiper(".main-mySwiper", {
       clickable: true,
     },
   });
+
+    // jquery
+    $(function() {
+        bestClick();
+    })
+
+  //best-goods click event
+  
+  function bestClick() {
+      $('.goods-slide .swiper-slide').click(function() {
+          $('.goods-slide .swiper-slide').removeClass('active');
+          $(this).addClass('active');
+
+          idx = $(this).index() + 1;
+          $('.best-data').removeClass('on');
+          $('.data' + idx).addClass('on');
+      })
+  }
