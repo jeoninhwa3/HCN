@@ -23,31 +23,50 @@ header .top-menu::after {
 header .top-menu .site {
     float: left;
 }
-header .top-menu .site li {
+header .top-menu .site > li {
     float: left;
     width: 90px;
     line-height: 40px;
     border-left: 1px solid #e1e1e1;
     background-color: #f0f0f0;
     text-align: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
 }
-header .top-menu .site li:last-child {
+header .top-menu .site > li:last-child {
     border-right: 1px solid #e1e1e1;
 }
-/* header .top-menu .site .select-box::after {
+header .top-menu .site .select-box::after {
+    content: '';
+    display: inline-block;
     width: 7px;
     height: 6px;
-    background-image: url('/images/icon_down.png');
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+    margin-left: 8px;
+    background: url('/images/icon_down.png') no-repeat center / 100%;
+}
+header .top-menu .site .select-box.open {
+    background-color: #fff;
+}
+header .top-menu .site .select-box.open::after {
+    background: url('/images/icon_up.png') no-repeat center / 100%;
+}
+header .top-menu .site .select-box .option {
+    display: none;
+    position: absolute;
+    top: 41px;
+    width: 91px;
+    border: 1px solid #e1e1e1;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    z-index: 10;
+}
 header .top-menu .site li.active {
     background-color: #212121;
     color: #fff;
-}
-header .top-menu .site li a {
-    display: block;
-    height: 100%;
 }
 header .top-menu .utill {
     float: right;
@@ -108,17 +127,51 @@ header .gnb-menu nav {
     transform: translateY(-50%);
     left: 0;
 }
-header .gnb-menu nav .gnb li {
+header .gnb-menu nav .gnb .depth1 {
     display: inline-block;
+    line-height: 82px;
 }
-header .gnb-menu nav .gnb li:not(:last-child) {
+header .gnb-menu nav .gnb .depth1:not(:last-child) {
     margin-right: 40px;
 }
-header .gnb-menu nav .gnb li a {
-    font-size: 17px;
+header .gnb-menu nav .gnb .depth1 a {
     display: block;
+    position: relative;
     height: 100%;
+    padding: 0 5px;
+    font-size: 17px;
+    font-weight: 500;
 }
+header .gnb-menu nav .gnb .depth1:hover > a {
+    color: #ff4c4c;
+}
+@keyframes ani-gnb {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+header .gnb-menu nav .gnb .depth1:hover > a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff4c4c;
+    animation: ani-gnb 0.2s;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 {
+    display: none;
+}
+/* header .gnb-menu nav .gnb .depth1:hover .depth2 {
+    display: block;
+} */
 header .gnb-menu .gnb-etc {
     position: absolute;
     top: 50%;
@@ -145,6 +198,14 @@ header .gnb-menu .gnb-etc li.btn-chanel {
 }
 header .gnb-menu .gnb-etc li.btn-fee {
     background-image: url('/images/icon_btn-fee.png');
+}
+header .gnb-menu .gnb-etc .btn-chanel:hover {
+    color: #ff4c4c;
+    background-image: url('/images/icon_btn-chanel-hover.gif');
+}
+header .gnb-menu .gnb-etc .btn-fee:hover {
+    color: #ff4c4c;
+    background-image: url('/images/icon_btn-fee-hover.gif');
 }
 header .gnb-menu .gnb-etc li a {
     font-size: 13px;
@@ -198,4 +259,151 @@ header .gnb-menu .gnb-etc li.btn-menu span::after {
     width: 21px;
     height: 1px;
     background-color: #000;
+}
+header .gnb-bg {}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 62px;
+    background-color: #242527;
+}
+footer {
+    position: relative;
+    background-color: #1e1f21;
+    padding-bottom: 45px;
+}
+footer::after {
+    content: '';
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #303133;
+}
+footer .f-menu1 {
+    line-height: 62px;
+}
+footer .f-menu1 li {
+    position: relative;
+    float: left;
+}
+footer .f-menu1 li:not(:first-child) {
+    padding-left: 30px;
+    margin-left: 30px;
+}
+footer .f-menu1 li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: inline-block;
+    width: 1px;
+    height: 9px;
+    background-color: #3a3b3d;
+}
+footer .f-menu1 li a {
+    color: #ddd;
+    font-size: 13px;
+}
+footer .f-menu2 {
+    line-height: 68px;
+}
+footer .f-menu2 li {
+    float: left;
+}
+footer .f-menu2 li:not(:first-child) {
+    margin-left: 30px;
+}
+footer .f-menu2 li a {
+    color: #999;
+    font-size: 13px;
+}
+footer .f-menu2 li a strong {
+    color: #fff;
+}
+footer .f-info {
+    padding-top: 40px; 
+}
+footer .f-info h2 {
+    position: absolute;
+    width: 155px;
+    height: 26px;
+    background: url('/images/icon_f-logo.png') no-repeat center;
+}
+footer .f-info h2 a {
+    display: block;
+    height: 100%;
+}
+footer .adress {
+    float: left;
+    margin: 0 130px 0 210px; 
+}
+footer .adress li {
+    position: relative;
+    line-height: 19px;
+    padding-left: 120px;
+    font-size: 12px;
+    color: #c1c1c1;
+}
+footer .adress li:not(:first-child) {
+    margin-top: 7px;
+}
+footer .adress li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999;
+}
+footer .adress p {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #999;
+}
+footer .tel {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+footer .tel dl {
+    font-size: 13px;
+}
+footer .tel dl:first-child {
+    margin-bottom: 7px;
+}
+footer .tel dl dt {
+    float: left;
+    width: 75px;
+    line-height: 24px;
+    color: #999;
+}
+footer .tel dl dd {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #c1c1c1;
+    vertical-align: top;
+}
+/* footer .tel dl:nth-child(2) dd:first-child::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 9px;
+    background-color: #999;
+} */
+footer .tel dl dd a span {
+    font-size: 12px;
+}
+footer .f-banner {
+    display: inline-block;
+    margin-left: 35px;
+}
+footer .f-banner li {
+    float: left;
+    margin-right: 30px;
 }
