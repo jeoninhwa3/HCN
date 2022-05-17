@@ -1,0 +1,82 @@
+.event-wrap {
+    text-align: center;
+}
+.event-wrap li {
+    padding-bottom: 50px;
+    border: 1px solid #e1e1e1;
+}
+.event-wrap li:not(:last-child) {
+    margin-bottom: 50px;
+}
+.event-wrap li p {
+    line-height: 68px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    background-color: #e2e5e4;
+}
+.event-wrap li .goods {
+    float: left;
+    width: 53%;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.event-wrap li .goods img {
+    width: 100%;
+    height: 100%;
+}
+.event-wrap li .pay {
+    position: relative;
+    float: right;
+    width: 47%;
+    padding: 0 30px 0 180px;
+    box-sizing: border-box;
+}
+.event-wrap li .pay .sum {
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #414143;
+}
+.event-wrap li .pay .sum::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.event-wrap li .pay .sum::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.event-wrap li .pay .img-wrap {
+    margin-bottom: 20px;
+}
+.event-wrap li .pay .img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+.event-wrap li .pay .btn {
+    display: inline-block;
+    width: 200px;
+    line-height: 58px;
+    color: #fff;
+    border: 1px solid #ff1919;
+    background-color: #ff1919;
+}

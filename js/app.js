@@ -51,7 +51,6 @@ var swiper = new Swiper(".vod-mySwiper", {
 // jquery
 $(function() {
 	bestClick();
-	selectBoxClick();
 })
 
 //best-goods click event  
@@ -71,14 +70,15 @@ function bestClick() {
 const selectBox = document.querySelector('.select-box');
 const selOption = document.querySelector('.select-box .option');
 
-function selectBoxClick() {	
-	selectBox.classList.add('open');
+function selectBoxClick(e) {
+  e.preventDefault();	
+  if (selectBox.classList.contains('open')) {
+    selectBox.classList.remove('open');
+  } else {
+	  selectBox.classList.add('open');
+  }
 	
-	if(selOption.style.display = 'none') {
-		selOption.style.display = 'block'
-	} else {
-		selOption.style.display = 'none'
-	}
+  selOption.classList.toggle('open');
 }
 
 selectBox.addEventListener('click', selectBoxClick);

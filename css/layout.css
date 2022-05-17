@@ -57,12 +57,22 @@ header .top-menu .site .select-box .option {
     top: 41px;
     width: 91px;
     border: 1px solid #e1e1e1;
-    padding-right: 10px;
     box-sizing: border-box;
     background-color: #fff;
     color: #666;
     font-size: 14px;
     z-index: 10;
+}
+header .top-menu .site .select-box .option.open {
+    display: block;
+}
+header .top-menu .site .select-box .option li {
+    padding-right: 10px;
+    transition: 0.5s;
+}
+header .top-menu .site .select-box .option li:hover {
+    background-color: #000;
+    color: #fff;
 }
 header .top-menu .site li.active {
     background-color: #212121;
