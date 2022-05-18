@@ -51,6 +51,7 @@ var swiper = new Swiper(".vod-mySwiper", {
 // jquery
 $(function() {
 	bestClick();
+    tabMenu();
 })
 
 //best-goods click event  
@@ -66,19 +67,36 @@ function bestClick() {
 }
 
 // select-box click event
-
 const selectBox = document.querySelector('.select-box');
 const selOption = document.querySelector('.select-box .option');
 
 function selectBoxClick(e) {
-  e.preventDefault();	
-  if (selectBox.classList.contains('open')) {
-    selectBox.classList.remove('open');
-  } else {
-	  selectBox.classList.add('open');
-  }
-	
-  selOption.classList.toggle('open');
+    e.preventDefault();	
+    if (selectBox.classList.contains('open')) {
+        selectBox.classList.remove('open');
+    } else {
+        selectBox.classList.add('open');
+    }
+
+    selOption.classList.toggle('open');
 }
 
 selectBox.addEventListener('click', selectBoxClick);
+
+// common tabMenu
+function tabMenu() {
+    $('.tab-nav li').click(function() {
+
+        let thisTab = $(this).attr('data-tabNumb');
+		$('.tab-nav li').removeClass('on');
+		$(this).addClass('on');
+
+        $('.tab-con').removeClass('active');
+        $(`.${thisTab}`).addClass('active');
+            
+
+		// // idx2 = $(this).index() + 1;
+		// // $('.tab-con').removeClass('active');
+		// // $('.tab0' + idx).addClass('active');
+    })
+}

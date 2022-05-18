@@ -551,3 +551,115 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.bargain-area .banner-wrap {
+    margin-bottom: 60px;
+}
+.bargain-area .notice {
+    padding: 80px 0;
+    margin-bottom: 30px;
+    background-color: #ecf9f5;
+    text-align: center;
+}
+.bargain-area .notice h3 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #222;
+    font-weight: bold;
+}
+.bargain-area .notice ul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bargain-area .notice ul li {
+    display: inline-block;
+}
+.bargain-area .notice p {
+    position: relative;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.bargain-area .notice p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+.event-area .tab-con ul li,
+.benefit-area .tab-con ul li {
+    float: left;
+    width: calc((100% - 80px) / 3);
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+.event-area .tab-con ul li:not(:nth-child(3n)),
+.benefit-area .tab-con ul li:not(:nth-child(3n)) {
+    margin-right: 40px;
+}
+.event-area .tab-con ul li .img-wrap,
+.benefit-area .tab-con ul li .img-wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+.event-area .tab-con ul li .img-wrap span,
+.benefit-area .tab-con ul li .img-wrap span {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.event-area .tab-con ul li .text-wrap span,
+.benefit-area .tab-con ul li .text-wrap span {
+    display: block;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #333;
+}
+.event-area .tab02 table,
+.benefit-area .tab02 table {
+    width: 100%;
+}
+.event-area .tab02 table thead,
+.benefit-area .tab02 table thead {
+    line-height: 52px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: #eee;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+}
+.event-area .tab02 table tbody,
+.benefit-area .tab02 table tbody { 
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 17px;
+    color: #666;
+    text-align: center;
+}
+.event-area .tab02 table tbody tr,
+.benefit-area .tab02 table tbody tr {
+    line-height: 65px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.event-area .tab03 ul li .img-wrap::before,
+.benefit-area .tab03 ul li .img-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
