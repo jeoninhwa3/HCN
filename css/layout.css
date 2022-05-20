@@ -139,21 +139,20 @@ header .gnb-menu nav {
 }
 header .gnb-menu nav .gnb .depth1 {
     display: table-cell;
-    /* line-height: 82px; */
-}
-header .gnb-menu nav .gnb .depth1:not(:last-child) {
-    margin-right: 40px;
 }
 header .gnb-menu nav .gnb .depth1 > a {
     display: inline-block;
     position: relative;
-    line-height: 82px;
     padding: 0 5px;
     font-size: 17px;
     font-weight: 500;
 }
+header .gnb-menu nav .gnb .depth1 > a:not(:last-child) {
+    margin-right: 40px;
+}
 header .gnb-menu nav .gnb .depth1:hover > a {
     color: #ff4c4c;
+    line-height: 82px;
 }
 @keyframes ani-gnb {
     0% {
@@ -177,6 +176,9 @@ header .gnb-menu nav .gnb .depth1:hover > a::before {
     margin: 0 auto;
     background-color: #ff4c4c;
     animation: ani-gnb 0.2s;
+}
+header .gnb-menu nav .gnb .depth1:hover .gnb-bg {
+    display: block;
 }
 header .gnb-menu nav .gnb .depth1 .depth2 {
     display: none;
@@ -216,6 +218,16 @@ header .gnb-menu nav .gnb .depth1 .depth2 .gnb-list li a {
 }
 header .gnb-menu nav .gnb .depth1:hover .depth2 {
     display: block;
+}
+header .gnb-bg {
+    display: none;
+    position: absolute;
+    top: 124px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 50;
 }
 header .gnb-menu .gnb-etc {
     position: absolute;
@@ -305,16 +317,6 @@ header .gnb-menu .gnb-etc li.btn-menu span::after {
     height: 1px;
     background-color: #000;
 }
-/* header .gnb-bg {
-    display: none;
-    position: absolute;
-    top: 124px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-    z-index: 10;
-} */
 header .gnb-menu nav .gnb .depth1:hover .gnb-bg {
     display: block;
 }

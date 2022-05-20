@@ -100,3 +100,17 @@ function tabMenu() {
 		// // $('.tab0' + idx).addClass('active');
     })
 }
+
+// customerMain qna Click
+const qnaBtn = document.querySelector('.qna-ui > li');
+const stringQ = document.querySelector('.qna-ui .q');
+const stringA = document.querySelector('.qna-ui .a');
+const qnaOpen = document.querySelector('.qna-open');
+
+function qnaClick() {
+    stringQ.classList.toggle('on');
+    stringA.classList.toggle('on');
+    qnaOpen.classList.toggle('active');   
+}
+
+qnaBtn.addEventListener('click', qnaClick);
