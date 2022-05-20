@@ -138,16 +138,16 @@ header .gnb-menu nav {
     left: 0;
 }
 header .gnb-menu nav .gnb .depth1 {
-    display: inline-block;
-    line-height: 82px;
+    display: table-cell;
+    /* line-height: 82px; */
 }
 header .gnb-menu nav .gnb .depth1:not(:last-child) {
     margin-right: 40px;
 }
-header .gnb-menu nav .gnb .depth1 a {
-    display: block;
+header .gnb-menu nav .gnb .depth1 > a {
+    display: inline-block;
     position: relative;
-    height: 100%;
+    line-height: 82px;
     padding: 0 5px;
     font-size: 17px;
     font-weight: 500;
@@ -180,10 +180,43 @@ header .gnb-menu nav .gnb .depth1:hover > a::before {
 }
 header .gnb-menu nav .gnb .depth1 .depth2 {
     display: none;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    width: 1280px;
+    height: 230px;
+    padding: 45px 0 0 197px;
+    box-sizing: border-box;
 }
-/* header .gnb-menu nav .gnb .depth1:hover .depth2 {
+header .gnb-menu nav .gnb .depth1 .depth2 .tit {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 145px;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 .tit strong {
+    font-size: 30px;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 .tit p {
+    margin-top: 17px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #333;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 .gnb-list li {
+    display: inline-block;
+    width: 200px;
+    margin-left: 60px;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 .gnb-list li a {
     display: block;
-} */
+    height: 38px;
+    line-height: 18px;
+    font-size: 18px;
+}
+header .gnb-menu nav .gnb .depth1:hover .depth2 {
+    display: block;
+}
 header .gnb-menu .gnb-etc {
     position: absolute;
     top: 50%;
@@ -271,6 +304,19 @@ header .gnb-menu .gnb-etc li.btn-menu span::after {
     width: 21px;
     height: 1px;
     background-color: #000;
+}
+/* header .gnb-bg {
+    display: none;
+    position: absolute;
+    top: 124px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 10;
+} */
+header .gnb-menu nav .gnb .depth1:hover .gnb-bg {
+    display: block;
 }
 footer::before {
     content: '';

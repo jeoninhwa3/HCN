@@ -1,3 +1,10 @@
+.banner-wrap {
+    text-align: center;
+}
+.banner-wrap a {
+    display: block;
+    height: 100%;
+}
 .event-wrap {
     text-align: center;
 }
