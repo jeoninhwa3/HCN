@@ -51,8 +51,24 @@ var swiper = new Swiper(".vod-mySwiper", {
 // jquery
 $(function() {
 	bestClick();
-    tabMenu();
+  	tabMenu();
 })
+
+//header gnb-bg
+const gnbLi = document.querySelectorAll('.gnb-menu .depth1');
+const bg = $('.gnb-menu .depth2').innerHeight();
+gnbLi.addEventListener('mouseenter', (e) => {
+	// $('.gnb-bg').stop().animate({height : bg}, 10);
+	console.log('dldldl')
+});
+
+// const gnb = document.querySelector('.gnb-menu .depth1');
+// function gnbBg() {
+// 	const bg = $('.gnb-menu .depth2').innerHeight();
+// 	$('.gnb-bg').stop().animate({height : bg}, 10);
+// }
+
+// gnb.addEventListener('mouseenter', gnbBg);
 
 //best-goods click event  
 function bestClick() {
@@ -102,15 +118,15 @@ function tabMenu() {
 }
 
 // customerMain qna Click
-const qnaBtn = document.querySelector('.qna-ui > li');
-const stringQ = document.querySelector('.qna-ui .q');
-const stringA = document.querySelector('.qna-ui .a');
-const qnaOpen = document.querySelector('.qna-open');
+// const qnaBtn = document.querySelector('.qna-ui > li');
+// const stringQ = document.querySelector('.qna-ui .q');
+// const stringA = document.querySelector('.qna-ui .a');
+// const qnaOpen = document.querySelector('.qna-open');
 
-function qnaClick() {
-    stringQ.classList.toggle('on');
-    stringA.classList.toggle('on');
-    qnaOpen.classList.toggle('active');   
-}
+// function qnaClick() {
+//     stringQ.classList.toggle('on');
+//     stringA.classList.toggle('on');
+//     qnaOpen.classList.toggle('active');   
+// }
 
-qnaBtn.addEventListener('click', qnaClick);
+// qnaBtn.addEventListener('click', qnaClick);
