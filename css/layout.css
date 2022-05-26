@@ -185,6 +185,7 @@ header .gnb-bg {
     background-color: #fff;
     overflow: hidden;
     z-index: -1;
+    box-shadow: 0 10px 15px rgba(0 0 0 / 10%);
 }
 header .gnb-menu nav .gnb .depth1:hover .depth2 {
     display: block;
@@ -198,12 +199,6 @@ header .gnb-menu nav .gnb .depth1 .depth2 {
     padding: 45px 0 0 197px;
     box-sizing: border-box;
     z-index: 10;
-}
-header .gnb-menu nav .gnb .depth1:nth-child(1) .depth2 {
-    height: 230px;
-}
-header .gnb-menu nav .gnb .depth1:nth-child(3) .depth2 {
-    height: 230px;
 }
 header .gnb-menu nav .gnb .depth1 .depth2 .tit {
     position: absolute;
@@ -235,6 +230,9 @@ header .gnb-menu nav .gnb .depth1 .depth2 .gnb-list > li > a {
     line-height: 18px;
     font-size: 18px;
     font-weight: 500;
+}
+header .gnb-menu nav .gnb .depth1 .depth2 .gnb-list > li > a:hover {
+    color: #ff4c4c;
 }
 header .gnb-menu nav .gnb .depth1 .depth2 .depth3 {
     padding-top: 18px;
