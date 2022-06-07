@@ -10,8 +10,8 @@
     width: 100%;
     height: 640px;
     background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: contain;
+    background-position: 50% 50%;
+    background-size: auto;
 }
 .main-slide .swiper-slide:nth-child(1),
 .main-slide .swiper-slide:nth-child(4) {
@@ -425,6 +425,8 @@
 /* @board-wrap */
 .board-wrap {
     line-height: 80px;
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 .board-wrap h3 {
     float: left;
@@ -432,7 +434,7 @@
 }
 .board-wrap p {
     float: left;
-    margin: 0 500px 0 135px;
+    margin: 0 35% 0 135px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -444,7 +446,7 @@
     color: #666;
 }
 .board-wrap .more {
-    float: left;
+    float: right;
     font-size: 13px;
     text-decoration: underline;
     color: #222;

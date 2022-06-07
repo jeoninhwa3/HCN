@@ -1,0 +1,20 @@
+@media screen and (max-width: 1300px) {
+    /* common */
+    .banner-wrap {
+        max-width: 1300px;
+        height: 280px;
+    }
+    header .top-menu .utill {
+        padding-right: 20px;
+    }
+    header .gnb-menu {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    footer {
+        padding: 0 20px 45px;
+    }
+    footer .f-banner li {
+        margin-right: 15px;
+    }
+}

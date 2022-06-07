@@ -51,7 +51,6 @@ var swiper = new Swiper(".vod-mySwiper", {
 // jquery
 $(function() {
 	bestClick();
-  	tabMenu();
 })
 
 //header gnb-bg
@@ -109,22 +108,30 @@ function selectBoxClick(e) {
 selectBox.addEventListener('click', selectBoxClick);
 
 // common tabMenu
+const tabList = document.querySelectorAll('.qna-nav li');
 function tabMenu() {
-    $('.tab-nav li').click(function() {
+	
+	for(let i = 0; i < tabList.length; i++) {
+		tabList[i].onclick = function() {
+			tabList.classList.add('on');
+			console.log('lslslsl')
+		}
+		}
+	};
+    // $('.tab-nav li').click(function() {
 
-        let thisTab = $(this).attr('data-tabNumb');
-		$('.tab-nav li').removeClass('on');
-		$(this).addClass('on');
+    //     let thisTab = $(this).attr('data-tabNumb');
+		// $('.tab-nav li').removeClass('on');
+		// $(this).addClass('on');
 
-        $('.tab-con').removeClass('active');
-        $(`.${thisTab}`).addClass('active');
+    //     $('.tab-con').removeClass('active');
+    //     $(`.${thisTab}`).addClass('active');
             
 
 		// // idx2 = $(this).index() + 1;
 		// // $('.tab-con').removeClass('active');
 		// // $('.tab0' + idx).addClass('active');
-    })
-}
+    // })
 
 // customerMain qna Click
 // const qnaBtn = document.querySelector('.qna-ui > li');
