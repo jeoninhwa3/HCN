@@ -785,7 +785,7 @@
     top: 7px;
     right: 0;
     padding-right: 20px;
-    font-size: 13px;
+    font-size: 14px;
     color: #202020;
     background: url('/images/icon_customer-more.png') no-repeat right;
 }
@@ -862,7 +862,7 @@
     text-align: center;
     box-sizing: border-box;
 }
-.customer-area .help-box h3 {
+.customer-area .help-box p {
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: bold;
@@ -891,6 +891,7 @@
 .customer-area .help-box button {
     width: 50px;
     height: 50px;
+    margin-left: -3px;
     background: url('/images/icon_customer_search.png') no-repeat center #222;
     vertical-align: top;
 }
@@ -909,9 +910,11 @@
     color: #666;
     text-align: center;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .customer-area .qna-box .qna-nav li.on {
     position: relative;
+    border: 1px solid #ff4c4c;
     background-color: #ff4c4c;
     font-weight: bold;
     color: #fff;

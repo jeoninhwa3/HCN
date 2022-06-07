@@ -56,45 +56,28 @@ $(function() {
 
 //header gnb-bg
 const gnbLi = document.querySelectorAll('.gnb-menu .depth1');
-// const bgHeight = $('.gnb-menu .depth2').innerHeight();
+const depth2 = document.querySelectorAll('.gnb-menu .depth2');
+const bgHeight = depth2.clientHeight;
 const bg = document.querySelector('.gnb-bg');
-// gnbLi.addEventListener('mouseenter', (e) => {
-// 	let i;
-//   for(i = 0; i < gnbLi.length; i++) {
-//     $('.gnb-bg').stop().animate({height : bgHeight}, 10);
-//   }
-  // bg.style.height = bgHeight;
-//   $('.gnb-bg').stop().animate({height : bgHeight}, 20);
-	// console.log('dldldl')
-// });
 
-// function gnbBg() {
-// 	for(let i = 0; i < gnbLi.length; i++) {
-// 		console.log('gnbLi')
-// 	}
-// }
-// gnbLi.addEventListener('mouseenter', gnbBg);
+	// for(let i = 0; i < gnbLi.length; i++) {
+	// 	gnbLi[i].addEventListener('mouseenter', ()=> {
+	// 		// bg.style.transition = 'all 0.01s ease-in-out';
+	// 		$('.gnb-bg').stop().animate({height : 680}, 500);
+	// 	});
+	// 	gnbLi[i].addEventListener('mouseleave', ()=> {
+	// 		$('.gnb-bg').stop().animate({height : 0}, 500);
+	// 	});
+	// }
 
-	for(let i = 0; i < gnbLi.length; i++) {
-		gnbLi[i].addEventListener('mouseenter', ()=> {
-			// bg.style.transition = 'all 0.01s ease-in-out';
-			$('.gnb-bg').stop().animate({height : 680}, 500);
-		});
-		gnbLi[i].addEventListener('mouseleave', ()=> {
-			$('.gnb-bg').stop().animate({height : 0}, 500);
-		});
-	}
-// gnbLi.addEventListener('mouseleave', (e) => {
-// 	$('.gnb-bg').stop().animate({height : 0}, 20);
-// });
-
-// const gnb = document.querySelector('.gnb-menu .depth1');
-// function gnbBg() {
-// 	const bg = $('.gnb-menu .depth2').innerHeight();
-// 	$('.gnb-bg').stop().animate({height : bg}, 10);
-// }
-
-// gnb.addEventListener('mouseenter', gnbBg);
+  for(let i = 0; i < gnbLi.length; i++) {
+    gnbLi[i].onmouseenter = function() {
+		bg.style.height = '782px';
+    }
+    gnbLi[i].onmouseleave = function() {
+      bg.style.height = '0px';
+    }
+  }
 
 //best-goods click event  
 function bestClick() {

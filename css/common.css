@@ -121,6 +121,7 @@
 }
 .tab-common .tab-nav li.on {
     position: relative;
+    border: 1px solid #f00;
     background-color: #ff1919;
     color: #fff;
 }
