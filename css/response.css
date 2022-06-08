@@ -4,6 +4,9 @@
         max-width: 1300px;
         height: 280px;
     }
+    .paging {
+        padding-bottom: 20px;
+    }
     header .top-menu .utill {
         padding-right: 20px;
     }
@@ -11,10 +14,156 @@
         padding: 0 20px;
         box-sizing: border-box;
     }
+    header .gnb-menu nav .gnb .depth1 > a {
+        font-size: 15px;
+    }
+    header .gnb-menu nav .gnb .depth1 > a:not(:last-child) {
+        margin-right: 10px;
+    }
+    header .gnb-menu .gnb-etc li:not(:last-child) {
+        margin-right: 20px;
+    }
     footer {
         padding: 0 20px 45px;
     }
-    footer .f-banner li {
+    footer .adress {
+        margin: 0 100px 0 210px;
+    }
+    footer .f-banner li:not(:last-child) {
+        margin-right: 10px;
+    }
+    footer .f-banner li img {
+        height: 20px;
+    }
+    footer .tel dl dd {
+        font-size: 13px;
+    }
+    /* @index */
+    .main-slide {
+        height: 460px;
+        object-fit: cover;
+    }
+    .main-slide .btn-wrap .btn {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .main-slide .btn-wrap .btn.btn-next {
+        right: 0;
+    }
+    .main-slide .btn-wrap .btn.btn-prev {
+        right: 70px;
+    }
+    .best-goods .goods-slide {
+        width: 1020px;
+        overflow: hidden;
+    }
+    .best-goods .goods-slide .swiper-slide {
+        margin-right: 0 !important;
+    }
+    .best-goods .btn {
+        display: none;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .board-wrap p {
+        margin: 0 15% 0 135px;
+    }
+    /* @timesale-area */
+    .banner-wrap.h420 {
+        height: 420px;
+    }
+    .timesale-area .inner-wrap,
+    .bargain-area .inner-wrap, 
+    .benefit-area .inner-wrap,
+    .event-area .inner-wrap,
+    .customer-area .inner-wrap,
+    .question-area .inner-wrap,
+    .ars-area .inner-wrap {
+        padding: 0 10px;
+    }
+    .timesale-area .honey-event .more {
         margin-right: 15px;
     }
+    .timesale-area .honey-event .honey-list {
+        padding: 0 15px;
+    }
+    .timesale-area .honey-event .honey-list li img {
+        width: 100%;
+        height: 100%;
+    }
+    /* @bargain-area */
+    .bargain-area .notice ul li {
+        width: 165px;
+        height: 165px;
+    }
+    .bargain-area .notice ul li img {
+        width: 100%;
+        height: 100%;
+    }
+    /* @event-area @benefit-area */
+    .event-area .tab-con ul li, .benefit-area .tab-con ul li {
+        margin-bottom: 30px;
+    }
+    .card-area .card-list ul li .text-wrap dl dd {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .card-area .banner-wrap {
+        height: 60px;
+    }
+    /* @customer-area */
+    .customer-area .banner-wrap {
+        height: 218px;
+        padding: 60px 0 45px;
+    }
+    .customer-area .banner-wrap ul li a {
+        width: 140px;
+        line-height: 50px;
+        padding-left: 27px;
+    }
+    .customer-area .banner-wrap ul li a::before {
+        height: 50px;
+    }
+    .customer-area .banner-wrap ul li:nth-child(1) a::before,
+    .customer-area .banner-wrap ul li:nth-child(2) a::before,
+    .customer-area .banner-wrap ul li:nth-child(3) a::before,
+    .customer-area .banner-wrap ul li:nth-child(4) a::before {
+        left: 10px;
+    }
+    .customer-area .banner-wrap ul li:nth-child(5) a::before,
+    .customer-area .banner-wrap ul li:nth-child(6) a::before {
+        left: 30px;
+    }
+    .customer-area .self-guide .self-list .self-item ul li {
+        font-size: 15px;
+    }
+    .customer-area .service ul li {
+        width: 156px;
+        height: 156px;
+        padding-top: 90px;
+    }
+    .customer-area .service ul li::before {
+        top: 25px;
+    }
+    /* @question */
+    .question-area .help-box {
+        padding: 0 12px 60px;
+        border: none;
+    }
+    /* @ars-area */
+    .ars-area .box {
+        padding-left: 33%;
+    }
+    .ars-area .box::before {
+        left: 4%;
+    }
+}
+@media screen and (max-width : 1024px) {
+    
 }

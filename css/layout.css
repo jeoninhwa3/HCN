@@ -485,5 +485,7 @@ footer .f-banner {
 }
 footer .f-banner li {
     float: left;
+}
+footer .f-banner li:not(:last-child) {
     margin-right: 30px;
 }
