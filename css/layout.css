@@ -105,6 +105,9 @@ header .top-menu .utill li:not(:first-child)::after {
     height: 6px;
     background-color: #ccc;
 }
+header .top-menu .site > li .mo-option {
+    display: none;
+}
 header .gnb-menu {
     position: relative;
     width: 100%;
@@ -131,26 +134,26 @@ header .gnb-menu h1 a {
     display: block;
     height: 100%;
 }
-header .gnb-menu nav {
+header .gnb-menu .web-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
 }
-header .gnb-menu nav .gnb .depth1 {
+header .gnb-menu .web-nav .gnb .depth1 {
     display: table-cell;
 }
-header .gnb-menu nav .gnb .depth1 > a {
+header .gnb-menu .web-nav .gnb .depth1 > a {
     display: inline-block;
     position: relative;
     padding: 0 8px;
     font-size: 17px;
     font-weight: 500;
 }
-header .gnb-menu nav .gnb .depth1 > a:not(:last-child) {
+header .gnb-menu .web-nav .gnb .depth1 > a:not(:last-child) {
     margin-right: 30px;
 }
-header .gnb-menu nav .gnb .depth1:hover > a {
+header .gnb-menu .web-nav .gnb .depth1:hover > a {
     color: #ff4c4c;
     line-height: 82px;
 }
@@ -164,6 +167,9 @@ header .gnb-menu nav .gnb .depth1:hover > a {
     100% {
         width: 100%;
     }
+}
+header .gnb-menu .mobile-nav {
+    display: none;
 }
 header .gnb-menu nav .gnb .depth1:hover > a::before {
     content: '';
@@ -449,9 +455,6 @@ footer .tel {
     display: inline-block;
     margin-bottom: 20px;
 }
-footer .tel dl {
-    font-size: 13px;
-}
 footer .tel dl:first-child {
     margin-bottom: 7px;
 }
@@ -460,6 +463,7 @@ footer .tel dl dt {
     width: 75px;
     line-height: 24px;
     color: #999;
+    font-size: 13px;
 }
 footer .tel dl dd {
     float: left;

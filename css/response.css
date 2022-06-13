@@ -165,5 +165,164 @@
     }
 }
 @media screen and (max-width : 1024px) {
-    
+    header .top-menu {
+        height: 0;
+    }
+    header .top-menu .site {
+        position: absolute;
+        top: 16px;
+        left: 61.5%;
+        width: 38.5%;
+    }
+    header .top-menu .site > li {
+        display: none;
+        line-height: 0;
+        border-left: none;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        cursor: pointer;
+    }
+    header .top-menu .site > li.active,
+    header .top-menu .site > li.has-child {
+        display: block;
+    }
+    header .top-menu .site > li.active {
+        height: 28px;
+        line-height: 28px;
+        background-color: #fff;
+        color: #666;
+        font-size: 15px;
+        background: url('/images/icon_down02.png') no-repeat 67px 13px / 7px auto;
+    }
+    header .top-menu .site > li.has-child {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        border: none;
+        background: none;
+    }
+    header .top-menu .site > li.has-child a {
+        display: inline-block;
+        padding-top: 22px;
+        background: url('/images/icon_site_haschild.png') no-repeat 10px 0 / 17px auto;
+        font-size: 9px;
+        color: #222;
+    }
+    header .top-menu .site .select-box::after {
+        display: none;
+    }
+    header .top-menu .utill {
+        display: none;
+    }
+    header .top-menu::after {
+        display: none;
+    }
+    header .top-menu .mobile-menu {
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        width: 21px;
+        height: 18px;
+        cursor: pointer;
+    }
+    header .top-menu .mobile-menu span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+    header .top-menu .mobile-menu span:nth-child(1) {
+        top: 0;
+    }
+    header .top-menu .mobile-menu span:nth-child(2) {
+        top: 8px;
+    }
+    header .top-menu .mobile-menu span:nth-child(3) {
+        bottom: 0;
+    }
+    header .gnb-menu::after {
+        top: 90px;
+    }
+    header .gnb-menu h1 {
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 190px;
+        height: 28px;
+        background-size: auto 28px;
+    }
+    header .gnb-menu .web-nav {
+        display: none;
+    }
+    header .gnb-menu .mobile-nav {
+        display: block;
+        padding-top: 65px;
+        text-align: center;
+    }
+    header .gnb-menu .mobile-nav ul {
+        display: inline-block;
+    }
+    header .gnb-menu .mobile-nav ul li {
+        float: left;
+    }
+    header .gnb-menu .mobile-nav ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+    header .gnb-menu .gnb-etc {
+        display: none;
+    }
+    footer .f-menu1 {
+        display: none;
+    }
+    footer .f-menu2 {
+        line-height: 10px;
+        padding-top: 20px;
+    }
+    footer .f-menu2 li a {
+        font-size: 10px;
+    }
+    footer .f-info {
+        padding-top: 20px;
+        text-align: center;
+    }
+    footer .f-info h2 {
+        display: none;
+    }
+    footer .adress {
+        margin: 0 auto;
+    }
+    footer .adress li {
+        display: inline-block;
+        padding-left: 0;
+        font-size: 11px;
+    }
+    footer .tel {
+        text-align: center;
+    }
+    footer .tel dl:first-child {
+        position: relative;
+        display: inline-block;
+    }
+    /* footer .tel dl:first-child dd~dd::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 1px;
+        height: 15px;
+        background: #3a3b3d;
+    } */
+    footer .tel dl dt {
+        font-size: 11px;
+    }
+    footer .tel dl dd {
+        line-height: 20px;
+        font-size: 11px;
+    }
+    footer .tel dl dd a span {
+        font-size: 11px;
+    }
 }

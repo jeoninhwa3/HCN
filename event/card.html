@@ -11,13 +11,23 @@
 </head>
 <body>
     <div class="wrap">
-        <header>
+         <header>
             <div class="top-menu">
                 <div class="inner-wrap floatCancel">
                     <ul class="site floatCancel">
-                        <li class="active"><a href="/index.html">개인</a></li>
+                        <li class="active">
+                            <a href="/index.html">개인</a>
+                            <ul class="mo-option">
+                                <li class="active">
+                                    <a href="/index.html">개인</a>
+                                </li>
+                                <li>
+                                    <a href="">기업</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="">기업</a></li>
-                        <li class="select-box">
+                        <li class="select-box has-child">
                             <a href="">지역방송</a>
                             <ul class="option">
                                 <li ><a href="">서초</a></li>
@@ -37,6 +47,11 @@
                         <li><a href="">회사소개</a></li>
                         <li><a href="">ENGLISH</a></li>
                     </ul>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <!-- //top-menu -->
@@ -48,7 +63,7 @@
                         </a>
                     </h1>
         
-                    <nav>
+                    <nav class="web-nav">
                         <ul class="gnb">
                             <li class="depth1">
                                 <a href="/online/timesale.html">온라인특가</a>
@@ -220,6 +235,15 @@
                                     </ul>
                                 </div>
                             </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="mobile-nav">
+                        <ul class="floatCancel">
+                            <li><a href="/online/timesale.html">온라인특가</a></li>
+                            <li><a href="">상품</a></li>
+                            <li><a href="/event/event.html">이벤트/혜택</a></li>
+                            <li><a href="/customer/customerMain.html">고객지원</a></li>
                         </ul>
                     </nav>
     
