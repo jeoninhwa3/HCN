@@ -274,6 +274,35 @@
     header .gnb-menu .gnb-etc {
         display: none;
     }
+    /* @customer-area */
+    .customer-area .banner-wrap h2 {
+        font-size: 26px;
+        margin-bottom: 7px;
+    }
+    .customer-area .banner-wrap p {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .customer-area .banner-wrap ul li a {
+        width: 100px;
+        font-size: 11px;
+    }
+    .customer-area .banner-wrap ul li a::before {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 35px;
+    }
+    /* @footer */
+    footer {
+        padding: 0 20px 110px;
+    }
+    footer::before {
+        background-color: #1E1F21;
+    }
+    footer::after {
+        top: 180px;
+    }
     footer .f-menu1 {
         display: none;
     }
@@ -299,30 +328,50 @@
         padding-left: 0;
         font-size: 11px;
     }
+    footer .adress p {
+        margin-top: 0px;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     footer .tel {
         text-align: center;
+        margin-bottom: 0;
     }
     footer .tel dl:first-child {
         position: relative;
         display: inline-block;
     }
-    /* footer .tel dl:first-child dd~dd::after {
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: 0;
-        width: 1px;
-        height: 15px;
-        background: #3a3b3d;
-    } */
     footer .tel dl dt {
         font-size: 11px;
     }
     footer .tel dl dd {
         line-height: 20px;
         font-size: 11px;
+        margin-left: 5px;
     }
     footer .tel dl dd a span {
         font-size: 11px;
+    }
+    footer .f-menu2 {
+        text-align: center;
+    }
+    footer .adress {
+        float: none;
+    }
+    footer .adress li {
+        margin-right: 10px;
+    }
+    footer .adress li span {
+        position: inherit;
+        margin-right: 5px;
+    }
+    footer .f-menu2 li:not(:first-child) {
+        margin-left: 20px;
+    }
+    footer .f-banner {
+        display: inline-block;
+        margin: 12px auto;
     }
 }
